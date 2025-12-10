@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advaita Academy Results Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .logout {
+            text-align: right;
+        }
+        .exam-block {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logout">
+        <a href="/logout">Logout</a>
+    </div>
+
+    <h1>Advaita Academy Results Portal</h1>
+    <h2>Welcome, {{ student.name }}</h2>
+    <p><strong>Roll Number:</strong> {{ student.roll }}</p>
+
+    <hr>
+
+    <h2>Your Exam Results</h2>
+
+    {% if results %}
+        {% for exam in results %}
+            <div class="exam-block">
+
+                <h3>{{ exam.exam_name }}</h3>
+
+                <p><strong>Date:</strong> {{ exam.exam_date }}</p>
+
+                <p><strong>Math:</strong> {{ exam.math }}</p>
+                <p><strong>Physics:</strong> {{ exam.physics }}</p>
+                <p><strong>Chemistry:</strong> {{ exam.chemistry }}</p>
+                <p><strong>Total:</strong> {{ exam.total }}</p>
+
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No results available.</p>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
