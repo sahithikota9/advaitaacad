@@ -42,7 +42,15 @@
             "math": 38,
             "physics": 41,
             "chemistry": 39
-        }
+        },
+        {
+            "exam_name": "JEE 2",
+            "exam_date": "2025-12-10",
+            "math": 36,
+            "physics": 65,
+            "chemistry": 72
+
+        } 
     ],
 
     "10006": [
