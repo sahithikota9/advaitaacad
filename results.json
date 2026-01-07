@@ -37,20 +37,27 @@
     ],
     "10005": [
         {
-            "exam_name": "Test Exam 1",
+            "exam_name": "Test",
             "exam_date": "2025-12-01",
             "math": 38,
             "physics": 41,
             "chemistry": 39
         },
         {
-            "exam_name": "JEE 2",
+            "exam_name": "JEE Mock",
             "exam_date": "2025-12-10",
             "math": 36,
             "physics": 65,
             "chemistry": 72
 
-        } 
+        },
+        {
+            "exam_name": "JEE Mock",
+            "exam_date": "2025-11-28",
+            "math": 48,
+            "physics": 52,
+            "chemistry": 64 
+        }    
     ],
 
     "10006": [
